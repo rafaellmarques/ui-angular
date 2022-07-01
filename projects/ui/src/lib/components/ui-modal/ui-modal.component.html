@@ -1,0 +1,13 @@
+<div *ngIf="isVisible" #modal class="ui-modal" role="dialog" aria-describedby="description" aria-labelledby="title" aria-modal="true">
+  <div class="ui-modal-overlay"></div>
+  <div #dialog class="ui-modal-dialog" [attr.size]="this.size">
+    <header class="ui-modal-header" role="presentation">
+      <h2 class="ui-modal-title" id="title">{{ this.title }}</h2>
+      <ui-button class="ui-modal-close" p-icon="fa-solid fa-xmark" p-kind="tertiary"></ui-button>
+    </header>
+    <section class="ui-modal-body" id="description" role="presentation">
+      <ng-content></ng-content>
+    </section>
+    <footer class="ui-modal-footer" role="presentation"></footer>
+  </div>
+</div>

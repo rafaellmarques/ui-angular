@@ -10,6 +10,7 @@
 /node_modules
 npm-debug.log
 yarn-error.log
+package-lock.json
 
 # IDEs and editors
 .idea/
@@ -29,6 +30,7 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
+/.angular
 /.angular/cache
 .sass-cache/
 /connect.lock

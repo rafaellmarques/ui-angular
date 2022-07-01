@@ -1,0 +1,17 @@
+<label
+  class="ui-radio-label"
+  [attr.disabled]="disabled"
+>
+  <input
+    #radio
+    class="ui-radio-input"
+    name="name"
+    type="radio"
+    [attr.size]="size"
+    [checked]="checked"
+    [disabled]="disabled"
+  />
+  {{ label }}
+</label>
+
+{{ checked }}

@@ -1,0 +1,170 @@
+<section class="dnone">
+  <h2>Ui Button</h2>
+  <div>
+    <h3>Default</h3>
+    <div class="dflex">
+      <ui-button p-label="UiButton Secondary"></ui-button>
+      <ui-button p-label="UiButton Primary" p-kind="primary"></ui-button>
+      <ui-button p-label="UiButton Tertiary" p-kind="tertiary"></ui-button>
+    </div>
+    <h3>Small</h3>
+    <div class="dflex">
+      <ui-button p-label="UiButton Secondary" p-size="small"></ui-button>
+      <ui-button p-label="UiButton Primary" p-kind="primary" p-size="small"></ui-button>
+      <ui-button p-label="UiButton Tertiary" p-kind="tertiary" p-size="small"></ui-button>
+    </div>
+    <h3>Large</h3>
+    <div class="dflex">
+      <ui-button p-label="UiButton Secondary" p-size="large"></ui-button>
+      <ui-button p-label="UiButton Primary" p-kind="primary" p-size="large"></ui-button>
+      <ui-button p-label="UiButton Tertiary" p-kind="tertiary" p-size="large"></ui-button>
+    </div>
+  </div>
+
+  <div>
+    <h3>Danger</h3>
+    <div class="dflex">
+      <ui-button p-label="UiButton Secondary" [p-danger]="true"></ui-button>
+      <ui-button p-label="UiButton Primary" p-kind="primary" [p-danger]="true"></ui-button>
+      <ui-button p-label="UiButton Tertiary" p-kind="tertiary" [p-danger]="true"></ui-button>
+    </div>
+  </div>
+
+  <div>
+    <h3>Disabled</h3>
+    <div class="dflex">
+      <ui-button p-label="UiButton Secondary" [p-disabled]="true"></ui-button>
+      <ui-button p-label="UiButton Primary" [p-disabled]="true" p-kind="primary"></ui-button>
+      <ui-button p-label="UiButton Tertiary" [p-disabled]="true" p-kind="tertiary"></ui-button>
+    </div>
+  </div>
+
+  <div>
+    <h3>Danger disabled</h3>
+    <div class="dflex">
+      <ui-button p-label="UiButton Secondary" p-danger="true" [p-disabled]="true"></ui-button>
+      <ui-button p-label="UiButton Primary" p-danger="true" [p-disabled]="true" p-kind="primary"></ui-button>
+      <ui-button p-label="UiButton Tertiary" p-danger="true" [p-disabled]="true" p-kind="tertiary"></ui-button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Ui Button Group</h2>
+  <div>
+    <h3>Toggle: none</h3>
+    <div class="dflex-column">
+      <ui-button-group [p-buttons]="buttons" p-size="small"></ui-button-group>
+      <ui-button-group [p-buttons]="buttons"></ui-button-group>
+      <ui-button-group [p-buttons]="buttons" p-size="large"></ui-button-group>
+    </div>
+    <h3>Toggle simple</h3>
+    <div class="dflex-column">
+      <ui-button-group [p-buttons]="buttons" p-toggle="single"></ui-button-group>
+    </div>
+  </div>
+</section>
+
+<section class="dnone">
+  <h2>Ui Modal</h2>
+  <div class="dflex">
+    <ui-button p-label="Open modal" (p-click)="modal.open()"></ui-button>
+    <ui-modal #modal p-title="UI Modal"></ui-modal>
+  </div>
+</section>
+
+<section class="dnone">
+  <h2>Ui Tag</h2>
+  <div>
+    <h3>Default</h3>
+    <div class="dflex">
+      <ui-tag p-label="Tag neutral"></ui-tag>
+      <ui-tag p-label="Tag positive" p-type="positive"></ui-tag>
+      <ui-tag p-label="Tag negative" p-type="negative"></ui-tag>
+      <ui-tag p-label="Tag warning" p-type="warning"></ui-tag>
+      <ui-tag p-label="Tag info" p-type="info"></ui-tag>
+    </div>
+  </div>
+
+  <div>
+    <h3>Icon</h3>
+    <div class="dflex">
+      <ui-tag p-icon="fa-solid fa-circle" p-label="Tag neutral"></ui-tag>
+      <ui-tag p-icon="fa-solid fa-circle-check" p-label="Tag positive" p-type="positive"></ui-tag>
+      <ui-tag p-icon="fa-solid fa-circle-xmark" p-label="Tag negative" p-type="negative"></ui-tag>
+      <ui-tag p-icon="fa-solid fa-circle-exclamation" p-label="Tag warning" p-type="warning"></ui-tag>
+      <ui-tag p-icon="fa-solid fa-circle-info" p-label="Tag info" p-type="info"></ui-tag>
+    </div>
+  </div>
+
+  <div>
+    <h3>Removable</h3>
+    <div class="dflex">
+      <ui-tag p-label="Tag neutral" [p-removable]="true"></ui-tag>
+      <ui-tag p-label="Tag positive" p-type="positive" [p-removable]="true"></ui-tag>
+      <ui-tag p-label="Tag negative" p-type="negative" [p-removable]="true"></ui-tag>
+      <ui-tag p-label="Tag warning" p-type="warning" [p-removable]="true"></ui-tag>
+      <ui-tag p-label="Tag info" p-type="info" [p-removable]="true"></ui-tag>
+    </div>
+  </div>
+
+  <div>
+    <h3>Large label</h3>
+    <div class="dflex">
+      <ui-tag p-icon="fa-solid fa-circle" p-label="Tag neutral with large label inside to show ellipsis"></ui-tag>
+      <ui-tag p-icon="fa-solid fa-circle-check" p-label="Tag neutral with large label inside to show ellipsis" p-type="positive" [p-removable]="true"></ui-tag>
+      <ui-tag p-icon="fa-solid fa-circle-xmark" p-label="Tag neutral with large label inside to show ellipsis" p-type="negative" [p-removable]="true"></ui-tag>
+      <ui-tag p-icon="fa-solid fa-circle-exclamation" p-label="Tag neutral with large label inside to show ellipsis" p-type="warning"></ui-tag>
+      <ui-tag p-icon="fa-solid fa-circle-info" p-label="Tag neutral with large label inside to show ellipsis" p-type="info"></ui-tag>
+    </div>
+  </div>
+
+  <div>
+    <h3>Disabled</h3>
+    <div class="dflex">
+      <ui-tag p-icon="fa-solid fa-circle" p-label="Tag neutral with large label inside to show ellipsis" [p-disabled]="true"></ui-tag>
+      <ui-tag p-icon="fa-solid fa-circle-check" p-label="Tag neutral with large label inside to show ellipsis" p-type="positive" [p-removable]="true" [p-disabled]="true"></ui-tag>
+      <ui-tag p-icon="fa-solid fa-circle-xmark" p-label="Tag neutral with large label inside to show ellipsis" p-type="negative" [p-removable]="true" [p-disabled]="true"></ui-tag>
+      <ui-tag p-icon="fa-solid fa-circle-exclamation" p-label="Tag neutral with large label inside to show ellipsis" p-type="warning" [p-disabled]="true"></ui-tag>
+      <ui-tag p-icon="fa-solid fa-circle-info" p-label="Tag neutral with large label inside to show ellipsis" p-type="info" [p-disabled]="true"></ui-tag>
+    </div>
+  </div>
+</section>
+
+<section class="dnone">
+  <h2>Ui Toaster</h2>
+  <div>
+    <h3>Default</h3>
+    <ui-toaster p-message="Ui Toaster Error" p-type="error"></ui-toaster>
+    <ui-toaster p-message="Ui Toaster Info" p-type="info"></ui-toaster>
+    <ui-toaster p-message="Ui Toaster Success" p-type="success"></ui-toaster>
+    <ui-toaster p-message="Ui Toaster Warning" p-type="warning"></ui-toaster>
+  </div>
+
+  <div>
+    <h3>Action</h3>
+    <ui-toaster p-message="Ui Toaster Error" p-type="error" p-action-label="action"></ui-toaster>
+    <ui-toaster p-message="Ui Toaster Info" p-type="info" p-action-label="action"></ui-toaster>
+    <ui-toaster p-message="Ui Toaster Success" p-type="success" p-action-label="action"></ui-toaster>
+    <ui-toaster p-message="Ui Toaster Warning" p-type="warning" p-action-label="action"></ui-toaster>
+  </div>
+
+  <div>
+    <h3>Large message</h3>
+    <ui-toaster p-message="Ui Toaster Error large message to simulate a line break in the component" p-type="error" p-action-label="action"></ui-toaster>
+    <ui-toaster p-message="Ui Toaster Info large message to simulate a line break in the component" p-type="info" p-action-label="action"></ui-toaster>
+    <ui-toaster p-message="Ui Toaster Success large message to simulate a line break in the component" p-type="success" p-action-label="action"></ui-toaster>
+    <ui-toaster p-message="Ui Toaster Warning large message to simulate a line break in the component" p-type="warning" p-action-label="action"></ui-toaster>
+  </div>
+</section>
+
+<section class="dnone">
+  <h2>Radio</h2>
+  <div class="dflex">
+    <ui-radio p-label="Radio 1" p-name="teste"></ui-radio>
+    <ui-radio p-label="Radio 2" p-name="teste"></ui-radio>
+    <ui-radio p-label="Radio 3" p-name="teste"></ui-radio>
+    <ui-radio [p-disabled]="true" p-label="Radio disabled"></ui-radio>
+    <ui-radio [p-checked]="true" [p-disabled]="true" p-label="Radio disabled checked"></ui-radio>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+ui-radio {
+  --color-unchecked: var(--color-neutral-light-00);
+  --border-color: var(--color-neutral-dark-70);
+
+  /* checked */
+  --color-checked: var(--color-action-default);
+
+  /* hover */
+  --shadow-color-hover: var(--color-brand-01-lighter);
+  --color-hover: var(--color-action-hover);
+
+  /* focus */
+  --outline-color-focused: var(--color-action-focus);
+
+  /* disabled */
+  --color-unchecked-disabled: var(--color-action-disabled);
+
+  /* disabled checked */
+  --color-checked-disabled: var(--color-neutral-dark-70);
+}

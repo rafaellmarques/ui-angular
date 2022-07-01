@@ -1,0 +1,8 @@
+<ui-button
+  *ngFor="let button of buttons; index as i"
+  [attr.disabled]="button.disabled"
+  [p-icon]="button.icon"
+  [p-label]="button.label"
+  [p-size]="size"
+  (p-click)="button.action(button); onButtonClick(button, i)"
+></ui-button>

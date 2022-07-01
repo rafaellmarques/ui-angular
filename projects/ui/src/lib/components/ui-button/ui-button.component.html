@@ -1,0 +1,13 @@
+<button
+  #button
+  class="ui-button"
+  [attr.danger]="danger"
+  [attr.kind]="kind"
+  [attr.size]="size"
+  [disabled]="disabled"
+  [type]="type"
+  (click)="onClick()"
+>
+  <ui-icon *ngIf="icon" class="ui-button-icon" [p-icon]="icon"></ui-icon>
+  <span *ngIf="label" class="ui-button-label">{{ label }}</span>
+</button>

@@ -1,0 +1,53 @@
+ui-tag {
+  --border-radius: var(--border-radius-pill);
+  --font-family: var(--font-family-text);
+  --font-size: var(--font-size-sm);
+  --line-height: var(--line-height-sm);
+
+  /* Neutral */
+  --color-neutral: var(--color-neutral-light-10);
+  --text-color-neutral: var(--color-neutral-dark-80);
+
+  /* Positive */
+  --color-positive: var(--color-feedback-positive-lightest);
+  --text-color-positive: var(--color-feedback-positive-dark);
+
+  /* Negative */
+  --color-negative: var(--color-feedback-negative-lightest);
+  --text-color-negative: var(--color-feedback-negative-darker);
+
+  /* Warning */
+  --color-warning: var(--color-feedback-warning-lightest);
+  --text-color-warning: var(--color-feedback-warning-darkest);
+
+  /* Info */
+  --color-info: var(--color-feedback-info-lightest);
+  --text-color-info: var(--color-feedback-info-dark);
+}
+
+[removable="true"] {
+  --color: var(--color-brand-01-lightest);
+  --border-color: var(--color-brand-01-lighter);
+  --border-radius: var(--border-radius-pill);
+
+  /* Label */
+  --fon-family: var(--font-family-text);
+  --font-size: var(--font-size-sm);
+  --line-height: var(--line-height-sm);
+  --text-color: var(--color-neutral-dark-80);
+
+  /* Close */
+  --color-icon: var(--color-action-default);
+
+  /* hover */
+  --color-hover: var(--color-brand-01-lighter);
+
+  /* focus */
+  --color-focus: var(--color-action-focus);
+
+  /* disabled */
+  --color-disabled: var(--color-neutral-light-20);
+  --border-color-disabled: var(--color-action-disabled);
+  --color-icon-color: var(--color-action-disabled);
+  --text-color-disabled: var(--color-neutral-dark-70);
+}

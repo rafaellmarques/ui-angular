@@ -1,0 +1,15 @@
+<div #toaster class="ui-toaster" [attr.timeout]="timeout" [attr.type]="type">
+  <div *ngIf="icon" class="ui-toaster-icon">
+    <ui-icon [p-icon]="icon"></ui-icon>
+  </div>
+
+  <div class="ui-toaster-message">{{ message }}</div>
+
+  <div class="ui-toaster-actions">
+    <ui-button *ngIf="actionLabel" class="ui-toaster-action" p-kind="tertiary" [p-label]="actionLabel"></ui-button>
+
+    <div class="ui-toaster-divider"></div>
+
+    <ui-button #toasterClose class="ui-toaster-close" p-icon="fa-solid fa-xmark" p-kind="tertiary" (p-click)="onButtonClose()"></ui-button>
+  </div>
+</div>

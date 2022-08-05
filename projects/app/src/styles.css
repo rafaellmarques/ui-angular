@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+/* Icons */
+@import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
+/* Brand */
+@import url(./assets/styles/brand.css);
+/* Global */
+@import url(./assets/styles/global.css);
+/* Helpers */
+@import url(./assets/styles/helpers.css);
+/* Components */
+@import url(./assets/styles/components/components.css);

@@ -7,6 +7,7 @@ button {
   display: flex;
   font-family: var(--font-family);
   font-weight: var(--font-weight-bold);
+  gap: 0.5em;
   justify-content: center;
   letter-spacing: var(--letter-spacing-auto);
   line-height: var(--line-height);
@@ -16,35 +17,35 @@ button {
   width: inherit;
 }
 
-button:is([size="small"], [size="medium"], [size="large"]) {
+button:is([p-size="small"], [p-size="medium"], [p-size="large"]) {
   font-size: var(--font-size);
   line-height: var(--line-height);
   padding: var(--padding);
 }
 
-button[size='small'] {
+button[p-size='small'] {
   min-height: 2em;
   min-width: 2em;
 }
 
-button[size='large'] {
+button[p-size='large'] {
   min-height: 3.5em;
   min-width: 3.5em;
 }
 
-button[kind='primary'] {
+button[p-kind='primary'] {
   background-color: var(--color);
   border-color: transparent;
   box-shadow: var(--shadow);
   color: var(--text-color);
 }
 
-button[kind='primary']:hover {
+button[p-kind='primary']:hover {
   background-color: var(--color-hover);
   color: var(--text-color);
 }
 
-button[kind='primary']:active {
+button[p-kind='primary']:active {
   background-color: var(--color-pressed);
 }
 
@@ -55,68 +56,68 @@ button:is(:focus, :enabled:active) {
   outline-width: var(--border-width-lg);
 }
 
-button[kind='secondary'] {
+button[p-kind='secondary'] {
   background-color: transparent;
   border-color: var(--color);
   box-shadow: var(--shadow-none);
   color: var(--color);
 }
 
-button[kind='secondary']:hover {
+button[p-kind='secondary']:hover {
   background-color: var(--background-hover);
   border-color: var(--border-color-hover);
   color: var(--border-color-hover);
 }
 
-button[kind='secondary']:enabled:active {
+button[p-kind='secondary']:enabled:active {
   background-color: var(--background-pressed);
   border-color: var(--border-color-hover);
   color: var(--border-color-hover);
 }
 
-button[kind='tertiary'] {
+button[p-kind='tertiary'] {
   background-color: transparent;
   border-color: transparent;
   box-shadow: var(--shadow-none);
   color: var(--color);
 }
 
-button[kind='tertiary']:hover {
+button[p-kind='tertiary']:hover {
   background-color: var(--background-hover);
   color: var(--border-color-hover);
 }
 
-button[kind='tertiary']:enabled:active {
+button[p-kind='tertiary']:enabled:active {
   background-color: var(--background-pressed);
   color: var(--color-pressed);
 }
 
-button[kind='primary'][danger="true"] {
+button[p-kind='primary'][p-danger="true"] {
   background-color: var(--color-danger);
   border-color: transparent;
   color: var(--text-color-danger);
 }
 
-button[kind='primary'][danger="true"]:enabled:hover {
+button[p-kind='primary'][p-danger="true"]:enabled:hover {
   background-color: var(--color-danger-hover);
 }
 
-button[kind='primary'][danger="true"]:enabled:active {
+button[p-kind='primary'][p-danger="true"]:enabled:active {
   background-color: var(--color-danger-pressed);
 }
 
-button[kind='secondary'][danger="true"] {
+button[p-kind='secondary'][p-danger="true"] {
   border-color: var(--color-danger);
   color: var(--color-danger);
 }
 
-button[kind='secondary'][danger="true"]:enabled:hover {
+button[p-kind='secondary'][p-danger="true"]:enabled:hover {
   background-color: var(--background-danger-hover);
   border-color: var(--border-color-danger-hover);
   color: var(--border-color-danger-hover);
 }
 
-button[kind='secondary'][danger="true"]:enabled:active {
+button[p-kind='secondary'][p-danger="true"]:enabled:active {
   background-color: var(--background-danger-pressed);
   border-color: var(--border-color-danger-hover);
   color: var(--border-color-danger-hover);
@@ -127,24 +128,18 @@ button:disabled {
   cursor: not-allowed;
 }
 
-button[kind='primary']:disabled {
+button[p-kind='primary']:disabled {
   background-color: var(--color-disabled);
   color: var(--text-color-disabled);
 }
 
-button[kind='secondary']:disabled {
+button[p-kind='secondary']:disabled {
   background-color: transparent;
   border-color: var(--color-disabled);
   color: var(--color-disabled);
 }
 
-button[kind='tertiary']:disabled {
+button[p-kind='tertiary']:disabled {
   background-color: transparent;
   color: var(--color-disabled);
-}
-
-/* Button icon */
-button ui-icon {
-  display: inherit;
-  margin-right: .5rem;
 }

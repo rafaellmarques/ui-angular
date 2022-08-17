@@ -4,6 +4,7 @@ html {
   --color-action-pressed: #0d0d59;
   --color-action-disabled: #b4b4c0;
   --color-action-focus: #0d0d59;
+
   --color-brand-01-lightest: #ebebf5;
   --color-brand-01-lighter: #c2c2e5;
   --color-brand-01-light: #9898cd;
@@ -18,6 +19,7 @@ html {
   --color-brand-02-dark: #50955c;
   --color-brand-02-darker: #325d39;
   --color-brand-02-darkest: #18391e;
+
   --color-neutral-dark-70: #515162;
   --color-neutral-dark-80: #36364a;
   --color-neutral-dark-90: #1d1d30;
@@ -25,10 +27,11 @@ html {
   --color-neutral-light-10: #ececee;
   --color-neutral-light-20: #d0d0d7;
   --color-neutral-light-30: #b4b4c0;
-  --color-neutral-light-00: #fff;
+  --color-neutral-light-00: #ffffff;
   --color-neutral-light-05: #f9f9fa;
   --color-neutral-mid-40: #9191a1;
   --color-neutral-mid-60: #69697c;
+
   --font-family-heading: "Open Sans";
   --font-family-text: "Open Sans";
   --font-family-code: monospace;

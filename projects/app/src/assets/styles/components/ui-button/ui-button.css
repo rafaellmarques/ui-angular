@@ -34,20 +34,20 @@ button {
   --color-disabled: var(--color-action-disabled);
 }
 
-button[size="small"] {
+button[p-size="small"] {
   --font-size: var(--font-size-sm);
   --line-height: var(--line-height-none);
   --padding: 0 0.5em;
 }
 
-button[size="large"] {
+button[p-size="large"] {
   --font-size: var(--font-size-default);
   --line-height: var(--line-height-none);
   --padding: 0 1.5em;
 }
 
-button[kind="secondary"],
-button[kind="tertiary"] {
+button[p-kind="secondary"],
+button[p-kind="tertiary"] {
   --background-hover: var(--color-brand-01-lighter);
   --border-color-hover: var(--color-brand-01-darkest);
 

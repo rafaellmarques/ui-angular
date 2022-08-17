@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input, TemplateRef } from '@angular/core';
-import { UiIconSize } from './ui-icon-size.enum';
+
+type UiIconSize = 'small' | 'medium' | 'large';
 
 @Component({
   selector: 'ui-icon',
@@ -11,7 +12,7 @@ export class UiIconComponent {
   className!: string;
 
   private _icon!: string | TemplateRef<void>;
-  private _size: string = UiIconSize.medium;
+  private _size?: UiIconSize = 'medium';
 
   @Input('p-icon') set icon(value: string | TemplateRef<void>) {
     if (typeof value === 'string') {
@@ -25,12 +26,12 @@ export class UiIconComponent {
     return this._icon;
   }
 
-  @Input('p-size') set size(value: string) {
+  @Input('p-size') set size(value: UiIconSize) {
     this._size = value;
   }
 
   get size() {
-    return this._size;
+    return this._size!;
   }
 
   private addClass(value: string) {

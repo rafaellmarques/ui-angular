@@ -1,0 +1,7 @@
+ui-loading-icon {
+  --ui-loading-icon-color: var(--color-neutral-light-30);
+  --ui-loading-icon-color-neutral: var(--color-neutral-dark-90);
+
+  --ui-loading-icon-translateX: 150%;
+  --ui-loading-icon-translateY: 100%;
+}

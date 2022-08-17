@@ -9,6 +9,7 @@ html {
   --border-width-md: 2px;
   --border-width-lg: 4px;
   --border-width-xl: 8px;
+
   --color-feedback-info-lightest: #e3e9f7;
   --color-feedback-info-lighter: #b0c1e8;
   --color-feedback-info-light: #7996d7;
@@ -37,11 +38,13 @@ html {
   --color-feedback-warning-dark: #d8a20e;
   --color-feedback-warning-darker: #705200;
   --color-feedback-warning-darkest: #473400;
+
   --shadow-none: 0 0 0 rgb(255, 255, 255);
   --shadow-sm: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 3px 0 rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 0 3px 0 rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 6px 12px 0 rgba(0, 0, 0, 0.1), 0 0 3px 0 rgba(0, 0, 0, 0.1);
   --shadow-xl: 0 16px 24px 0 rgba(0, 0, 0, 0.1), 0 0 3px 0 rgba(0, 0, 0, 0.1);
+
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;
@@ -58,6 +61,7 @@ html {
   --spacing-squish-xl: 16px 24px;
   --spacing-squish-2xl: 24px 40px;
   --spacing-squish-3xl: 32px 48px;
+
   --letter-spacing-1: 0.015em;
   --letter-spacing-2: 0.025em;
   --letter-spacing-3: 0.05em;
@@ -69,6 +73,7 @@ html {
   --letter-spacing-neg-3: -0.05em;
   --letter-spacing-neg-4: -0.075em;
   --letter-spacing-neg-5: -0.1em;
+
   --line-height-auto: auto;
   --line-height-none: 100%;
   --line-height-3xs: 110%;
@@ -81,6 +86,7 @@ html {
   --line-height-2xl: 180%;
   --line-height-3xl: 190%;
   --line-height-4xl: 200%;
+
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-default: 1rem;

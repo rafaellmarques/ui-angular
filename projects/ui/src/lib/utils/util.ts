@@ -10,3 +10,8 @@ export function convertToBoolean(value: any): boolean {
 
   return !!value;
 }
+
+export function isValidUrl(value: string): boolean {
+  const pattern = /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/;
+  return pattern.test(value);
+}

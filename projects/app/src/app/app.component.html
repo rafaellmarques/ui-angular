@@ -1,47 +1,61 @@
-<section>
-  <h2>Ui Button</h2>
-  <div>
-    <h3>Default</h3>
-    <div class="row">
-      <ui-button p-label="UiButton Secondary"></ui-button>
-      <ui-button p-label="UiButton Primary" p-kind="primary"></ui-button>
-      <ui-button p-label="UiButton Tertiary" p-kind="tertiary"></ui-button>
-    </div>
-  </div>
+<main>
+  <article>
+    <h2>Ui Button</h2>
+    <div class="container">
+      <ui-card>
+        <h4>Default</h4>
+        <div class="row">
+          <ui-button p-label="UiButton Secondary"></ui-button>
+          <ui-button p-label="UiButton Primary" p-kind="primary"></ui-button>
+          <ui-button p-label="UiButton Tertiary" p-kind="tertiary"></ui-button>
+        </div>
+      </ui-card>
 
-  <div>
-    <h3>Danger</h3>
-    <div class="row">
-      <ui-button p-label="UiButton Secondary" [p-danger]="true"></ui-button>
-      <ui-button p-label="UiButton Primary" p-kind="primary" [p-danger]="true"></ui-button>
-      <ui-button p-label="UiButton Tertiary" p-kind="tertiary" [p-danger]="true"></ui-button>
-    </div>
-  </div>
+      <ui-card>
+        <h4>Danger</h4>
+        <div class="row">
+          <ui-button p-label="UiButton Secondary" [p-danger]="true"></ui-button>
+          <ui-button p-label="UiButton Primary" p-kind="primary" [p-danger]="true"></ui-button>
+          <ui-button p-label="UiButton Tertiary" p-kind="tertiary" [p-danger]="true"></ui-button>
+        </div>
+      </ui-card>
 
-  <div>
-    <h3>Disabled</h3>
-    <div class="row">
-      <ui-button p-label="UiButton Secondary" [p-disabled]="true"></ui-button>
-      <ui-button p-label="UiButton Primary" [p-disabled]="true" p-kind="primary"></ui-button>
-      <ui-button p-label="UiButton Tertiary" [p-disabled]="true" p-kind="tertiary"></ui-button>
-    </div>
-  </div>
+      <ui-card>
+        <h4>Disabled</h4>
+        <div class="row">
+          <ui-button p-label="UiButton Secondary" [p-disabled]="true"></ui-button>
+          <ui-button p-label="UiButton Primary" [p-disabled]="true" p-kind="primary"></ui-button>
+          <ui-button p-label="UiButton Tertiary" [p-disabled]="true" p-kind="tertiary"></ui-button>
+        </div>
+      </ui-card>
 
-  <div>
-    <h3>Disabled danger</h3>
-    <div class="row">
-      <ui-button p-label="UiButton Secondary" p-danger="true" [p-disabled]="true"></ui-button>
-      <ui-button p-label="UiButton Primary" p-danger="true" [p-disabled]="true" p-kind="primary"></ui-button>
-      <ui-button p-label="UiButton Tertiary" p-danger="true" [p-disabled]="true" p-kind="tertiary"></ui-button>
-    </div>
-  </div>
+      <ui-card>
+        <h4>Loading</h4>
+        <div class="row">
+          <ui-button p-label="UiButton Secondary" [p-loading]="true"></ui-button>
+          <ui-button p-label="UiButton Primary" [p-loading]="true" p-kind="primary"></ui-button>
+          <ui-button p-label="UiButton Tertiary" [p-loading]="true" p-kind="tertiary"></ui-button>
+        </div>
+      </ui-card>
 
-  <div>
-    <h3>Icon</h3>
-    <div class="row">
-      <ui-button p-label="UiButton Secondary" p-icon="fa-solid fa-circle"></ui-button>
-      <ui-button p-label="UiButton Primary" p-icon="fa-solid fa-circle" p-kind="primary"></ui-button>
-      <ui-button p-label="UiButton Tertiary" p-icon="fa-solid fa-circle" p-kind="tertiary"></ui-button>
+      <ui-card>
+        <h4>Icon</h4>
+        <div class="row">
+          <ui-button p-icon="fa-solid fa-circle" p-label="UiButton Secondary"></ui-button>
+          <ui-button p-icon="fa-solid fa-circle" p-label="UiButton Primary" p-kind="primary"></ui-button>
+          <ui-button p-icon="fa-solid fa-circle" p-label="UiButton Tertiary" p-kind="tertiary"></ui-button>
+        </div>
+      </ui-card>
     </div>
-  </div>
-</section>
+  </article>
+
+  <article>
+    <h2>Ui Card</h2>
+    <div class="container">
+      <ui-card>Default</ui-card>
+      <ui-card p-type="link">Link</ui-card>
+      <ui-card p-type="link" p-href="www.google.com.br">Link</ui-card>
+      <ui-card p-type="selectable">Selectable</ui-card>
+    </div>
+  </article>
+</main>

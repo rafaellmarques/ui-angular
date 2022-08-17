@@ -1,14 +1,18 @@
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
-section {
+article {
   border-bottom: 2.5px solid #ccc;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  margin: 0.5rem;
-  padding: 0.5rem;
+  display: inline-flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.container {
+  display: inline-flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  width: 100vw;
 }
 
 .dnone {

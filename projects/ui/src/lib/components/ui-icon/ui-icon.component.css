@@ -4,29 +4,29 @@
   justify-content: center;
 }
 
-[size="small"] {
+[p-size="small"] {
   height: 1rem;
   width: 1rem;
 }
 
-[size="small"]::before {
+[p-size="small"]::before {
   font-size: 1rem;
 }
 
-[size="medium"] {
+[p-size="medium"] {
   height: 1.5rem;
   width: 1.5rem;
 }
 
-[size="medium"]::before {
+[p-size="medium"]::before {
   font-size: 1.5rem;
 }
 
-[size="large"] {
+[p-size="large"] {
   height: 2rem;
   width: 2rem;
 }
 
-[size="large"]::before {
+[p-size="large"]::before {
   font-size: 2rem;
 }

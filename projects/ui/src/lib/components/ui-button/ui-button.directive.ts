@@ -1,15 +1,16 @@
 import { Directive, EventEmitter, HostBinding, Input, Output, TemplateRef } from '@angular/core';
 import { convertToBoolean } from '../../utils/util';
 
-type UiButtonKind = 'primary' | 'secondary' | 'tertiary';
-type UiButtonSize = 'small' | 'medium' | 'large';
-type UiButtonType = 'button' | 'submit' | 'reset';
+export type UiButtonKind = 'primary' | 'secondary' | 'tertiary';
+export type UiButtonSize = 'small' | 'medium' | 'large';
+export type UiButtonType = 'button' | 'submit' | 'reset';
 
 @Directive()
 export class UiButtonDirective {
   private _danger?: boolean = false;
   private _disabled?: boolean = false;
   private _kind?: UiButtonKind = 'secondary';
+  private _loading?: boolean = false;
   private _size?: UiButtonSize = 'medium';
   private _type?: UiButtonType = 'button';
 
@@ -34,6 +35,14 @@ export class UiButtonDirective {
 
   get size(): UiButtonSize {
     return this._size!;
+  }
+
+  @Input('p-loading') set loading(value: boolean) {
+    this._loading = convertToBoolean(value);
+  }
+
+  get loading(): boolean {
+    return this._loading!;
   }
 
   @HostBinding('attr.p-kind')

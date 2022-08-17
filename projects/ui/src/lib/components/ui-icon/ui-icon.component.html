@@ -1,5 +1,11 @@
 <ng-container *ngIf="className; then fontTemplate"></ng-container>
 
 <ng-template #fontTemplate>
-  <i #icon class="ui-icon" [class]="className" [attr.size]="size" aria-hidden="true"></i>
+  <i
+    #icon
+    class="ui-icon"
+    [class]="className"
+    aria-hidden="true"
+    [attr.p-size]="size"
+  ></i>
 </ng-template>

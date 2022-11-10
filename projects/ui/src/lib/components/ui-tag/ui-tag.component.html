@@ -1,0 +1,9 @@
+<div #tag class="ui-tag" [attr.p-disabled]="disabled" [attr.p-removable]="removable" [attr.p-type]="type">
+  <div *ngIf="icon && !removable" class="ui-tag-icon">
+    <ui-icon [p-icon]="icon" p-size="small"></ui-icon>
+  </div>
+  <div class="ui-tag-label">{{ label }}</div>
+  <div *ngIf="removable" aria-label="close" class="ui-tag-close" role="button" (click)="onClick()">
+    <ui-icon p-icon="fa-solid fa-xmark" p-size="small"></ui-icon>
+  </div>
+</div>

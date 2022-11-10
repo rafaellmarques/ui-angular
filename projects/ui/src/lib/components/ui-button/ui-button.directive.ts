@@ -2,23 +2,21 @@ import { Directive, EventEmitter, HostBinding, Input, Output, TemplateRef } from
 import { convertToBoolean } from '../../utils/util';
 
 export type UiButtonKind = 'primary' | 'secondary' | 'tertiary';
-export type UiButtonSize = 'small' | 'medium' | 'large';
-export type UiButtonType = 'button' | 'submit' | 'reset';
+export type UiButtonSize = 'large' | 'medium';
+export type UiButtonType = 'button' | 'reset' | 'submit';
 
 @Directive()
 export class UiButtonDirective {
-  private _danger?: boolean = false;
-  private _disabled?: boolean = false;
+  private _danger: boolean = false;
+  private _disabled: boolean = false;
   private _kind?: UiButtonKind = 'secondary';
-  private _loading?: boolean = false;
+  private _loading: boolean = false;
   private _size?: UiButtonSize = 'medium';
   private _type?: UiButtonType = 'button';
 
   @Input('p-icon') icon?: string | TemplateRef<void>;
 
   @Input('p-label') label?: string;
-
-  @Output('p-click') click = new EventEmitter<null>();
 
   @Input('p-type') set type(value: UiButtonType) {
     this._type = value;
@@ -69,4 +67,6 @@ export class UiButtonDirective {
   get danger(): boolean {
     return this._danger!;
   }
+
+  @Output('p-click') click = new EventEmitter<null>();
 }

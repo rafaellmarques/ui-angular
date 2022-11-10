@@ -1,0 +1,111 @@
+:host {
+  display: inline-flex;
+
+  --width-md: 24px;
+  --width-lg: 32px;
+
+  --offset-checked: 6px;
+}
+
+:host[p-disabled="false"] *  {
+  cursor: pointer;
+}
+
+:host[p-disabled="true"] * {
+  cursor: not-allowed;
+  user-select: none;
+}
+
+label {
+  align-items: center;
+  display: inline-flex;
+  gap: var(--spacing-xs);
+}
+
+[type="checkbox"] {
+  align-items: center;
+  appearance: none;
+  background-color: var(--color-unchecked);
+  border-color: var(--border-color);
+  border-radius: var(--border-radius-md);
+  border-style: solid;
+  border-width: var(--border-width-md);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+[type="checkbox"]::before {
+  color: var(--color-unchecked);
+  font-family: FontAwesome;
+}
+
+[type="checkbox"]:hover {
+  border-color: var(--color-hover);
+  box-shadow: 0 0 0 var(--border-width-lg) var(--shadow-color-hover);
+}
+
+[type="checkbox"]:disabled {
+  box-shadow: none;
+}
+
+[type="checkbox"]:focus-visible {
+  outline-color: var(--outline-color-focused);
+  outline-offset: 2px;
+  outline-style: solid;
+
+  outline-width: var(--border-width-lg);
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:indeterminate {
+  background-color: var(--color-checked);
+
+  border-color: transparent;
+}
+
+[type="checkbox"]:checked:hover,
+[type="checkbox"]:indeterminate:hover {
+  background-color: var(--color-hover);
+}
+[type="checkbox"]:disabled {
+  background-color: var(--color-unchecked-disabled);
+  border-color: var(--color-checked-disabled);
+
+  box-shadow: none;
+}
+
+[type="checkbox"]:checked:disabled,
+[type="checkbox"]:indeterminate:disabled {
+  background-color: var(--color-checked-disabled);
+}
+
+[type="checkbox"]:checked::before {
+  content: '\f00c';
+}
+
+[type="checkbox"]:indeterminate::before {
+  content: '\f068';
+}
+
+[type='checkbox'][size='medium'] {
+  height: var(--width-md);
+  width: var(--width-md);
+}
+
+[type='checkbox'][size='large'] {
+  height: var(--width-lg);
+  width: var(--width-lg);
+}
+
+svg {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+path,
+rect {
+  fill: var(--color-unchecked);
+}

@@ -1,0 +1,4 @@
+<label #checkboxLabel>
+  <input #checkboxInput type="checkbox" [name]="name" [checked]="checked" [disabled]="disabled" [required]="required" [attr.size]="size">
+  <ui-label *ngIf="label" [p-label]="label" [p-disabled]="disabled"></ui-label>
+</label>

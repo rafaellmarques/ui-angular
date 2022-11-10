@@ -1,61 +1,179 @@
 <main>
-  <article>
-    <h2>Ui Button</h2>
-    <div class="container">
-      <ui-card>
+  <ui-container [p-no-padding]="true">
+    <section>
+      <h2>Ui Button</h2>
+      <div class="container">
         <h4>Default</h4>
-        <div class="row">
-          <ui-button p-label="UiButton Secondary"></ui-button>
-          <ui-button p-label="UiButton Primary" p-kind="primary"></ui-button>
-          <ui-button p-label="UiButton Tertiary" p-kind="tertiary"></ui-button>
-        </div>
-      </ui-card>
+        <ui-button p-label="UiButton Secondary"></ui-button>
+        <ui-button p-label="UiButton Primary" p-kind="primary"></ui-button>
+        <ui-button p-label="UiButton Tertiary" p-kind="tertiary"></ui-button>
 
-      <ui-card>
+        <ui-divider></ui-divider>
+
         <h4>Danger</h4>
-        <div class="row">
-          <ui-button p-label="UiButton Secondary" [p-danger]="true"></ui-button>
-          <ui-button p-label="UiButton Primary" p-kind="primary" [p-danger]="true"></ui-button>
-          <ui-button p-label="UiButton Tertiary" p-kind="tertiary" [p-danger]="true"></ui-button>
-        </div>
-      </ui-card>
+        <ui-button p-label="UiButton Secondary" [p-danger]="true"></ui-button>
+        <ui-button p-label="UiButton Primary" p-kind="primary" [p-danger]="true"></ui-button>
+        <ui-button p-label="UiButton Tertiary" p-kind="tertiary" [p-danger]="true"></ui-button>
 
-      <ui-card>
+        <ui-divider></ui-divider>
+
         <h4>Disabled</h4>
-        <div class="row">
-          <ui-button p-label="UiButton Secondary" [p-disabled]="true"></ui-button>
-          <ui-button p-label="UiButton Primary" [p-disabled]="true" p-kind="primary"></ui-button>
-          <ui-button p-label="UiButton Tertiary" [p-disabled]="true" p-kind="tertiary"></ui-button>
-        </div>
-      </ui-card>
+        <ui-button p-label="UiButton Secondary" [p-disabled]="true"></ui-button>
+        <ui-button p-label="UiButton Primary" [p-disabled]="true" p-kind="primary"></ui-button>
+        <ui-button p-label="UiButton Tertiary" [p-disabled]="true" p-kind="tertiary"></ui-button>
 
-      <ui-card>
+        <ui-divider></ui-divider>
+
         <h4>Loading</h4>
-        <div class="row">
-          <ui-button p-label="UiButton Secondary" [p-loading]="true"></ui-button>
-          <ui-button p-label="UiButton Primary" [p-loading]="true" p-kind="primary"></ui-button>
-          <ui-button p-label="UiButton Tertiary" [p-loading]="true" p-kind="tertiary"></ui-button>
-        </div>
-      </ui-card>
+        <ui-button p-label="UiButton Secondary" [p-loading]="true"></ui-button>
+        <ui-button p-label="UiButton Primary" [p-loading]="true" p-kind="primary"></ui-button>
+        <ui-button p-label="UiButton Tertiary" [p-loading]="true" p-kind="tertiary"></ui-button>
 
-      <ui-card>
+        <ui-divider></ui-divider>
+
         <h4>Icon</h4>
-        <div class="row">
-          <ui-button p-icon="fa-solid fa-circle" p-label="UiButton Secondary"></ui-button>
-          <ui-button p-icon="fa-solid fa-circle" p-label="UiButton Primary" p-kind="primary"></ui-button>
-          <ui-button p-icon="fa-solid fa-circle" p-label="UiButton Tertiary" p-kind="tertiary"></ui-button>
-        </div>
-      </ui-card>
-    </div>
-  </article>
+        <ui-button p-icon="fa-solid fa-circle" p-label="UiButton Secondary"></ui-button>
+        <ui-button p-icon="fa-solid fa-circle" p-label="UiButton Primary" p-kind="primary"></ui-button>
+        <ui-button p-icon="fa-solid fa-circle" p-label="UiButton Tertiary" p-kind="tertiary"></ui-button>
+      </div>
+    </section>
 
-  <article>
-    <h2>Ui Card</h2>
-    <div class="container">
-      <ui-card>Default</ui-card>
-      <ui-card p-type="link">Link</ui-card>
-      <ui-card p-type="link" p-href="www.google.com.br">Link</ui-card>
-      <ui-card p-type="selectable">Selectable</ui-card>
-    </div>
-  </article>
+    <!-- <section>
+      <h2>Ui Card</h2>
+      <div class="container">
+        <ui-card>Default</ui-card>
+        <ui-card p-type="link">Link</ui-card>
+        <ui-card p-type="link" p-href="www.google.com.br">Link</ui-card>
+        <ui-card p-type="selectable">Selectable</ui-card>
+      </div>
+    </section> -->
+
+    <!-- <section>
+      <h2>Ui Checkbox</h2>
+      <div class="container">
+        <ui-checkbox p-label="UiCheckbox"></ui-checkbox>
+        <ui-checkbox p-label="UiCheckbox indeterminated" p-checked="indeterminate"></ui-checkbox>
+        <ui-checkbox p-label="UiCheckbox checked" [p-checked]="true"></ui-checkbox>
+        <ui-checkbox p-label="UiCheckbox disabled" [p-disabled]="true"></ui-checkbox>
+        <ui-checkbox p-label="UiCheckbox checked disabled" [p-checked]="true" [p-disabled]="true"></ui-checkbox>
+        <ui-checkbox p-label="UiCheckbox indeterminated disabled" [p-checked]="true" [p-disabled]="true"></ui-checkbox>
+      </div>
+    </section> -->
+
+    <section>
+      <h2>Ui Divider</h2>
+      <div class="container">
+        <ui-divider p-label="Divider"></ui-divider>
+        <ui-divider p-label="Divider Small" p-lineWidth="Small"></ui-divider>
+        <ui-divider p-label="Divider Medium" p-lineWidth="Medium"></ui-divider>
+        <ui-divider p-label="Divider Large" p-lineWidth="Large"></ui-divider>
+      </div>
+    </section>
+
+    <section>
+      <h2>Ui Image</h2>
+      <div class="container">
+        <ui-image p-src="https://raw.githubusercontent.com/po-ui/po-angular/master/docs/assets/po-logos/po_color_bg.svg"></ui-image>
+        <ui-image p-alt="PO-LOGO-BG" p-src="https://raw.githubusercontent.com/po-ui/po-angular/master/docs/assets/po-logos/po_color_bg.svg"></ui-image>
+        <ui-image p-alt="PO-LOGO Image Local" [p-src]="imageLocal"></ui-image>
+        <ui-image p-alt="PO-LOGO Image Local Height" [p-height]="imageHeight" [p-src]="imageLocal"></ui-image>
+        <ui-image p-alt="PO-LOGO Image Remote" [p-height]=100 [p-src]="imageRemote"></ui-image>
+        <ui-image p-alt="PO-LOGO Image Base64" [p-height]="imageHeight" [p-src]="imageBase64"></ui-image>
+      </div>
+    </section>
+
+    <section>
+      <h2>Ui Label</h2>
+      <div class="container">
+        <h3>Label Basic</h3>
+        <ui-label p-label="label"></ui-label>
+        <ui-label [p-disabled]="true" p-label="label"></ui-label>
+
+        <ui-divider></ui-divider>
+
+        <h3>Label Field</h3>
+        <ui-label [p-field]="true" p-label="label-field" p-requirement="Opcional"></ui-label>
+        <ui-label [p-disabled]="true" [p-field]="true" p-label="label-field" p-requirement="Obrigatório"></ui-label>
+      </div>
+    </section>
+
+    <!-- <section>
+      <h2>Ui Radio</h2>
+      <div class="container">
+        <ui-radio p-label="UiRadio"></ui-radio>
+        <ui-radio p-label="UiRadio checked" [p-checked]="true"></ui-radio>
+        <ui-radio p-label="UiRadio disabled" [p-disabled]="true"></ui-radio>
+        <ui-radio p-label="UiRadio checked disabled" [p-checked]="true" [p-disabled]="true"></ui-radio>
+      </div>
+    </section> -->
+
+    <!-- <section>
+      <h2>Ui Radio Group</h2>
+      <div class="container">
+        <ui-radio-group p-name="ui-radio-group" [p-options]="options"></ui-radio-group>
+      </div>
+    </section> -->
+
+    <section>
+      <h2>Tag</h2>
+      <div class="container">
+        <ui-tag p-label="Tag"></ui-tag>
+        <ui-tag p-label="Tag neutral" p-type="Neutral"></ui-tag>
+        <ui-tag p-label="Tag positive" p-type="Positive"></ui-tag>
+        <ui-tag p-label="Tag negative" p-type="Negative"></ui-tag>
+        <ui-tag p-label="Tag warning" p-type="Warning"></ui-tag>
+        <ui-tag p-label="Tag info" p-type="Info"></ui-tag>
+      </div>
+      <h2>Tag Icon</h2>
+      <div class="container">
+        <ui-tag p-icon="fa-solid fa-circle" p-label="Tag"></ui-tag>
+        <ui-tag p-icon="fa-solid fa-circle" p-label="Tag neutral" p-type="Neutral"></ui-tag>
+        <ui-tag p-icon="fa-solid fa-circle-check" p-label="Tag positive" p-type="Positive"></ui-tag>
+        <ui-tag p-icon="fa-solid fa-circle-xmark" p-label="Tag negative" p-type="Negative"></ui-tag>
+        <ui-tag p-icon="fa-solid fa-circle-exclamation" p-label="Tag warning" p-type="Warning"></ui-tag>
+        <ui-tag p-icon="fa-solid fa-circle-info" p-label="Tag info" p-type="Info"></ui-tag>
+      </div>
+      <h2>Tag Removable</h2>
+      <div class="container">
+        <ui-tag p-label="Tag" [p-removable]="true"></ui-tag>
+        <ui-tag p-label="Tag neutral" [p-removable]="true" p-type="Neutral"></ui-tag>
+        <ui-tag p-label="Tag positive" [p-removable]="true" p-type="Positive"></ui-tag>
+        <ui-tag p-label="Tag negative" [p-removable]="true" p-type="Negative"></ui-tag>
+        <ui-tag p-label="Tag warning" [p-removable]="true" p-type="Warning"></ui-tag>
+        <ui-tag p-label="Tag info" [p-removable]="true" p-type="Info"></ui-tag>
+      </div>
+      <h2>Tag Large</h2>
+      <div class="container">
+        <ui-tag p-label="Tag with large label inside to show ellipsis"></ui-tag>
+        <ui-tag p-label="Tag neutral with large label inside to show ellipsis" p-type="Neutral"></ui-tag>
+        <ui-tag p-label="Tag positive with large label inside to show ellipsis" p-type="Positive"></ui-tag>
+        <ui-tag p-label="Tag negative with large label inside to show ellipsis" p-type="Negative"></ui-tag>
+        <ui-tag p-label="Tag warning with large label inside to show ellipsis" p-type="Warning"></ui-tag>
+        <ui-tag p-label="Tag info with large label inside to show ellipsis" p-type="Info"></ui-tag>
+        <ui-divider></ui-divider>
+        <ui-tag p-icon="fa-solid fa-circle" p-label="Tag with large label inside to show ellipsis"></ui-tag>
+        <ui-tag p-icon="fa-solid fa-circle" p-label="Tag neutral with large label inside to show ellipsis" p-type="Neutral"></ui-tag>
+        <ui-tag p-icon="fa-solid fa-circle-check" p-label="Tag neutral with large label inside to show ellipsis" p-type="Positive"></ui-tag>
+        <ui-tag p-icon="fa-solid fa-circle-xmark" p-label="Tag neutral with large label inside to show ellipsis" p-type="Negative"></ui-tag>
+        <ui-tag p-icon="fa-solid fa-circle-exclamation" p-label="Tag neutral with large label inside to show ellipsis" p-type="Warning"></ui-tag>
+        <ui-tag p-icon="fa-solid fa-circle-info" p-label="Tag neutral with large label inside to show ellipsis" p-type="Info"></ui-tag>
+        <ui-divider></ui-divider>
+        <ui-tag p-icon="fa-solid fa-circle" p-label="Tag with large label inside to show ellipsis" [p-removable]="true"></ui-tag>
+        <ui-tag p-icon="fa-solid fa-circle" p-label="Tag neutral with large label inside to show ellipsis" [p-removable]="true" p-type="Neutral"></ui-tag>
+        <ui-tag p-icon="fa-solid fa-circle-check" p-label="Tag neutral with large label inside to show ellipsis" [p-removable]="true" p-type="Positive"></ui-tag>
+        <ui-tag p-icon="fa-solid fa-circle-xmark" p-label="Tag neutral with large label inside to show ellipsis" [p-removable]="true" p-type="Negative"></ui-tag>
+        <ui-tag p-icon="fa-solid fa-circle-exclamation" p-label="Tag neutral with large label inside to show ellipsis" [p-removable]="true" p-type="Warning"></ui-tag>
+        <ui-tag p-icon="fa-solid fa-circle-info" p-label="Tag neutral with large label inside to show ellipsis" [p-removable]="true" p-type="Info"></ui-tag>
+      </div>
+      <h2>Tag Disabled</h2>
+      <div class="container">
+        <ui-tag [p-disabled]="true" p-label="Tag disabled" [p-removable]="true"></ui-tag>
+        <ui-tag [p-disabled]="true" p-label="Tag neutral disabled" [p-removable]="true" p-type="Neutral"></ui-tag>
+        <ui-tag [p-disabled]="true" p-label="Tag positive disabled" [p-removable]="true" p-type="Positive"></ui-tag>
+        <ui-tag [p-disabled]="true" p-label="Tag positive disabled" [p-removable]="true" p-type="Negative"></ui-tag>
+        <ui-tag [p-disabled]="true" p-label="Tag positive disabled" [p-removable]="true" p-type="Warning"></ui-tag>
+        <ui-tag [p-disabled]="true" p-label="Tag positive disabled" [p-removable]="true" p-type="Info"></ui-tag>
+      </div>
+    </section>
+  </ui-container>
 </main>

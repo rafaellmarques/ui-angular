@@ -1,0 +1,12 @@
+<div #radioGroup role="radiogroup" [attr.aria-labelledby]="name">
+  <ui-radio
+    *ngFor="let option of options"
+    [p-name]="name"
+    [p-checked]="checked"
+    [p-disabled]="disabled"
+    [p-label]="label"
+    [p-required]="required"
+    [p-size]="size"
+  >
+  </ui-radio>
+</div>

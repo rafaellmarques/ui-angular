@@ -1,0 +1,7 @@
+<label
+  class="ui-label"
+  [attr.for]="field && for ? for : undefined"
+  [attr.p-field]="field"
+  [class.ui-label-disabled]="disabled"
+>{{ label }}</label>
+<span *ngIf="field && requirement" class="ui-label-requirement">{{ requirement }}</span>

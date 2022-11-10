@@ -1,4 +1,10 @@
 @import url(./ui-button/ui-button.css);
 @import url(./ui-card/ui-card.css);
+@import url(./ui-checkbox/ui-checkbox.css);
+@import url(./ui-container/ui-container.css);
+@import url(./ui-divider/ui-divider.css);
 @import url(./ui-icon/ui-icon.css);
+@import url(./ui-label/ui-label.css);
 @import url(./ui-loading-icon/ui-loading-icon.css);
+@import url(./ui-radio/ui-radio.css);
+@import url(./ui-tag/ui-tag.css);

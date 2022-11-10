@@ -1,0 +1,4 @@
+ui-divider {
+  --color: var(--color-neutral-light-40);
+  --stroke-linecap: round;
+}

@@ -1,0 +1,19 @@
+ui-label,
+ui-label-field {
+  /* basic */
+  --font-family: var(--font-family-text);
+  --font-size: var(--font-size-default);
+  --line-height: var(--line-height-md);
+  --text-color: var(--color-neutral-dark-90);
+
+  /* field */
+  --font-weight-field: var(--font-weight-semibold);
+
+  /* required */
+  --text-color-required: var(--color-neutral-dark-70);
+  --font-size-required: var(--font-size-sm);
+  --line-height-required: var(--line-height-sm);
+
+  /* disabled */
+  --text-color-disabled: var(--color-neutral-mid-60);
+}

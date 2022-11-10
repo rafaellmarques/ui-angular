@@ -1,7 +1,7 @@
-article {
+section {
   border-bottom: 2.5px solid #ccc;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  display: inline-flex;
+  display: flex;
   flex-flow: row wrap;
   gap: 1rem;
   margin-bottom: 1rem;
@@ -9,10 +9,10 @@ article {
 }
 
 .container {
-  display: inline-flex;
+  display: flex;
   flex-flow: row wrap;
   gap: 1rem;
-  width: 100vw;
+  width: 100%;
 }
 
 .dnone {
@@ -23,7 +23,23 @@ article {
   display: flex;
 }
 
+hr {
+  width: 100%;
+}
+
 .row {
   display: flex;
   gap: 1rem;
+}
+
+ui-image:nth-child(1),
+ui-image:nth-child(6) {
+  width: 100%;
+}
+
+ui-image:nth-child(2),
+ui-image:nth-child(3),
+ui-image:nth-child(4),
+ui-image:nth-child(5) {
+  width: calc(100% / 2 - 0.5em);
 }

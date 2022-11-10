@@ -1,0 +1,19 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.ui-divider {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ui-divider svg {
+  width: 100%;
+}
+
+.ui-divider rect {
+  fill: var(--color);
+  width: 100%;
+}

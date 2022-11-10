@@ -1,14 +1,7 @@
-<button
-  #button
-  class="ui-button"
-  [attr.p-danger]="danger"
-  [attr.p-kind]="kind"
-  [attr.p-size]="size"
-  [disabled]="disabled || loading"
-  [type]="type"
-  (p-click)="onClick()"
->
+<button #button class="ui-button" [attr.p-danger]="danger" [attr.p-kind]="kind" [attr.p-size]="size" [disabled]="disabled || loading" [type]="type" (p-click)="onClick()">
   <ui-loading-icon *ngIf="loading" class="ui-button-loading" [p-neutral-color]="kind === 'primary'" [p-size]="size"></ui-loading-icon>
-  <ui-icon *ngIf="icon" class="ui-button-icon" [p-icon]="icon" [p-size]="size"></ui-icon>  
+
+  <ui-icon *ngIf="icon" class="ui-button-icon" [p-icon]="icon" [p-size]="size"></ui-icon>
+
   <span *ngIf="label" class="ui-button-label">{{ label }}</span>
 </button>

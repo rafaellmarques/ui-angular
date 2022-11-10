@@ -1,0 +1,23 @@
+:host {
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  padding: var(--spacing-xs) 0;
+  width: 100%; */
+
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+[role="radiogroup"] {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+/* ui-radio {
+  padding: 0 var(--spacing-md) 0 0;
+} */
+
+ui-radio-group.ng-invalid.ng-dirty input[type='radio']:not([disabled]) {
+  border: solid var(--border-width-md) var(--color-feedback-negative-base);
+}

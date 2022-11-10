@@ -1,0 +1,26 @@
+.ui-container {
+  background-color: var(--background);
+  border-color: var(--border-color);
+  border-radius: var(--border-radius);
+  border-style: solid;
+  border-width: var(--border-width);
+  box-shadow: var(--shadow);
+  box-sizing: border-box;
+  color: inherit;
+  overflow-y: auto;
+  padding: var(--padding);
+  text-decoration: none;
+  width: 100%;
+}
+
+.ui-container-no-border {
+  border: 0;
+}
+
+.ui-container-no-padding {
+  padding: 0;
+}
+
+.ui-container-no-shadow {
+  box-shadow: none;
+}

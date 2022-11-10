@@ -13,6 +13,8 @@ import { AppComponent } from './app.component';
     UiComponentsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }

@@ -1,0 +1,37 @@
+.ui-label {
+  color: var(--text-color);
+  display: inline-block;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height);
+  text-align: left;
+}
+
+.ui-label::first-letter {
+  text-transform: uppercase;
+}
+
+.ui-label[p-field='true'] {
+  font-weight: var(--font-weight-field);
+  padding-right: var(--spacing-xs);
+}
+
+.ui-label-disabled,
+.ui-label-disabled + .ui-label-requirement {
+  color: var(--text-color-disabled);
+}
+
+.ui-label-requirement {
+  color: var(--text-color-required);
+  font-size: var(--font-size-required);
+  line-height: var(--line-height-required);
+}
+
+.ui-label-requirement::after {
+  content: ')';
+}
+
+.ui-label-requirement::before {
+  content: '(';
+}

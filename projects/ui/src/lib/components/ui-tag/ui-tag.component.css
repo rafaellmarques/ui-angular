@@ -1,0 +1,158 @@
+.ui-tag {
+  align-items: center;
+  border-color: transparent;
+  border-radius: var(--border-radius);
+  border-style: solid;
+  border-width: var(--border-width-sm);
+  display: flex;
+  gap: 0.25em;
+  justify-content: center;
+  max-width: 15em;
+  min-height: 1.5em;
+  overflow: hidden;
+  padding-left: var(--spacing-xs);
+  padding-right: var(--spacing-xs);
+}
+
+.ui-tag-icon,
+.ui-tag-label,
+.ui-tag-close {
+  align-self: stretch;
+}
+
+.ui-tag-icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.ui-tag-label {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height);
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ui-tag-close {
+  align-items: center;
+  border-left-color: var(--border-color);
+  border-left-style: solid;
+  border-left-width: var(--border-width-sm);
+  display: flex;
+  justify-content: center;
+  min-width: 25px;
+  overflow: hidden;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+}
+
+.ui-tag-close:hover {
+  background-color: var(--color-hover);
+  cursor: pointer;
+}
+
+.ui-tag-close:active,
+.ui-tag-close:focus-visible {
+  outline-color: var(--outline-color-focused);
+  outline-style: solid;
+  outline-width: var(--border-width-lg);
+}
+
+.ui-tag-close button {
+  all: unset;
+}
+
+.ui-tag[p-removable="true"],
+.ui-tag[p-removable="true"]:is([p-type="neutral"], [p-type="positive"], [p-type="negative"], [p-type="warning"], [p-type="info"]) {
+  background-color: var(--color);
+  border-color: var(--border-color);
+  padding-right: 0;
+}
+
+.ui-tag[p-removable="true"] .ui-tag-label,
+.ui-tag[p-removable="true"]:is([p-type="neutral"], [p-type="positive"], [p-type="negative"], [p-type="warning"], [p-type="info"]) .ui-tag-label {
+  color: var(--text-color);
+}
+
+.ui-tag[p-removable="true"] .ui-tag-close,
+.ui-tag[p-removable="true"]:is([p-type="neutral"], [p-type="positive"], [p-type="negative"], [p-type="warning"], [p-type="info"]) .ui-tag-close {
+  color: var(--color-icon);
+}
+
+.ui-tag[p-removable="true"][p-disabled="true"],
+.ui-tag[p-removable="true"][p-disabled="true"]:is([p-type="neutral"], [p-type="positive"], [p-type="negative"], [p-type="warning"], [p-type="info"]) {
+  background-color: var(--color-disabled);
+  border-color: var(--border-color-disabled);
+  cursor: not-allowed;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.ui-tag[p-removable="true"][p-disabled="true"] .ui-tag-icon {
+  color: var(--color-icon-disabled);
+}
+
+.ui-tag[p-removable="true"][p-disabled="true"] .ui-tag-label {
+  background-color: var(--color-disabled);
+  color: var(--text-color-disabled);
+}
+
+.ui-tag[p-removable="true"][p-disabled="true"] .ui-tag-close {
+  background-color: var(--color-disabled);
+  border-color: var(--border-color-disabled);
+  cursor: not-allowed;
+}
+
+.ui-tag[p-type="neutral"] {
+  background-color: var(--color-neutral);
+  color: var(--text-color-neutral);
+}
+
+.ui-tag[p-type="neutral"] .ui-tag-icon,
+.ui-tag[p-type="neutral"] .ui-tag-close {
+  color: var(--text-color-neutral);
+}
+
+.ui-tag[p-type="positive"] {
+  background-color: var(--color-positive);
+  color: var(--text-color-positive);
+}
+
+.ui-tag[p-type="positive"] .ui-tag-icon,
+.ui-tag[p-type="positive"] .ui-tag-close {
+  color: var(--text-color-positive);
+}
+
+.ui-tag[p-type="negative"] {
+  background-color: var(--color-negative);
+  color: var(--text-color-negative);
+}
+
+.ui-tag[p-type="negative"] .ui-tag-icon,
+.ui-tag[p-type="negative"] .ui-tag-close {
+  color: var(--text-color-negative);
+}
+
+.ui-tag[p-type="warning"] {
+  background-color: var(--color-warning);
+  color: var(--text-color-warning);
+}
+
+.ui-tag[p-type="warning"] .ui-tag-icon,
+.ui-tag[p-type="warning"] .ui-tag-close {
+  color: var(--text-color-warning);
+}
+
+.ui-tag[p-type="info"] {
+  background-color: var(--color-info);
+  color: var(--text-color-info);
+}
+
+.ui-tag[p-type="info"] .ui-tag-icon,
+.ui-tag[p-type="info"] .ui-tag-close {
+  color: var(--text-color-info);
+}

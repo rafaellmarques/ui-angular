@@ -15,3 +15,16 @@ export function isValidUrl(value: string): boolean {
   const pattern = /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/;
   return pattern.test(value);
 }
+
+export function removeDuplicatedOptions(list: Array<any>) {
+  for (let i = 0; i < list.length; i++) {
+    if (i === 0) {
+      continue;
+    }
+
+    if (list.findIndex(op => op.value === list[i].value) !== i) {
+      list.splice(i, 1);
+      i--;
+    }
+  }
+}

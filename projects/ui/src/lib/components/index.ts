@@ -9,6 +9,7 @@ export * from './ui-divider';
 export * from './ui-icon';
 export * from './ui-image';
 export * from './ui-label';
+export * from './ui-link';
 export * from './ui-loading';
 export * from './ui-radio-group';
 export * from './ui-tag';

@@ -1,0 +1,36 @@
+.ui-link {
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: inherit;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-auto);
+  line-height: inherit;
+  text-decoration: underline;
+}
+
+.ui-link:hover {
+  color: var(--text-color-hover);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ui-link:focus {
+  outline-color: var(--outline-color-focused);
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: var(--border-width-lg);
+}
+
+.ui-link:active {
+  color: var(--text-color-pressed);
+  cursor: pointer;
+  outline-color: var(--outline-color-focused);
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: var(--border-width-lg);
+  text-decoration: none;
+}
+
+.ui-link:visited {
+  color: var(--text-color-visited);
+}

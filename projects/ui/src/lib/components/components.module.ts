@@ -7,6 +7,7 @@ import { UiDividerModule } from "./ui-divider";
 import { UiIconModule } from "./ui-icon";
 import { UiImageModule } from "./ui-image";
 import { UiLabelModule } from "./ui-label";
+import { UiLinkModule } from "./ui-link";
 import { UiLoadingModule } from "./ui-loading";
 import { UiRadioGroupModule } from "./ui-radio-group";
 import { UiTagModule } from "./ui-tag";
@@ -21,6 +22,7 @@ import { UiTagModule } from "./ui-tag";
     UiIconModule,
     UiImageModule,
     UiLabelModule,
+    UiLinkModule,
     UiLoadingModule,
     UiRadioGroupModule,
     UiTagModule
@@ -34,6 +36,7 @@ import { UiTagModule } from "./ui-tag";
     UiIconModule,
     UiImageModule,
     UiLabelModule,
+    UiLinkModule,
     UiLoadingModule,
     UiRadioGroupModule,
     UiTagModule

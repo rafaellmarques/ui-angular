@@ -1,0 +1,16 @@
+ui-link {
+  --font-family: var(--font-family-text);
+  --text-color: var(--color-action-default);
+
+  /* Hover */
+  --text-color-hover: var(--color-action-hover);
+
+  /* Focus */
+  --outline-color-focused: var(--color-action-focus);
+
+  /* Pressed */
+  --text-color-pressed: var(--color-action-pressed);
+
+  /* Visited */
+  --text-color-visited: var(--color-action-pressed);
+}

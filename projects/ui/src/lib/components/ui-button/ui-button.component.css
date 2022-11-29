@@ -13,8 +13,9 @@ button {
   line-height: var(--line-height);
   min-height: 2.75em;
   min-width: 2.75em;
+  overflow: hidden;
   padding: var(--padding);
-  width: inherit;
+  width: auto;
 }
 
 button:is([p-size="small"], [p-size="medium"], [p-size="large"]) {

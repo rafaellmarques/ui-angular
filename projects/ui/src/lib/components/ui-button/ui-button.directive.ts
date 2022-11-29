@@ -1,9 +1,8 @@
-import { Directive, EventEmitter, HostBinding, Input, Output, TemplateRef } from '@angular/core';
+import { Directive, EventEmitter, Input, Output, TemplateRef } from '@angular/core';
 import { convertToBoolean } from '../../utils/util';
 
 export type UiButtonKind = 'primary' | 'secondary' | 'tertiary';
-export type UiButtonSize = 'large' | 'medium';
-export type UiButtonType = 'button' | 'reset' | 'submit';
+export type UiButtonSize = 'large' | 'medium' | 'small';
 
 @Directive()
 export class UiButtonDirective {
@@ -11,28 +10,18 @@ export class UiButtonDirective {
   private _disabled: boolean = false;
   private _kind?: UiButtonKind = 'secondary';
   private _loading: boolean = false;
-  private _size?: UiButtonSize = 'medium';
-  private _type?: UiButtonType = 'button';
+  private _size: UiButtonSize = 'medium';
 
   @Input('p-icon') icon?: string | TemplateRef<void>;
 
   @Input('p-label') label?: string;
 
-  @Input('p-type') set type(value: UiButtonType) {
-    this._type = value;
-  }
-
-  get type(): UiButtonType {
-    return this._type!;
-  }
-
-  @HostBinding('attr.p-size')
   @Input('p-size') set size(value: UiButtonSize) {
     this._size = value;
   }
 
   get size(): UiButtonSize {
-    return this._size!;
+    return this._size;
   }
 
   @Input('p-loading') set loading(value: boolean) {
@@ -43,7 +32,6 @@ export class UiButtonDirective {
     return this._loading!;
   }
 
-  @HostBinding('attr.p-kind')
   @Input('p-kind') set kind(value: UiButtonKind) {
     this._kind = value;
   }
@@ -68,5 +56,5 @@ export class UiButtonDirective {
     return this._danger!;
   }
 
-  @Output('p-click') click = new EventEmitter<null>();
+  @Output('p-click') click: EventEmitter<null> = new EventEmitter<null>();
 }
